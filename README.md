@@ -1,4 +1,4 @@
-# Evaluating the Faithfulness of Attribution-Based Interpretability Tooling in GPT-2
+# Explainability and Transparency in Large Language Models: Evaluating the Faithfulness of Attribution Patching Against Activation Patching in GPT-2
 
 Code and data for an MSc Computer Science (Artificial Intelligence) capstone project, University of Galway.
 
@@ -14,7 +14,7 @@ This project compares two methods for identifying important attention heads in G
 - **Activation patching** — exact, causal, one forward pass per component (144 in total)
 - **Attribution patching** — a first-order approximation using one forward and one backward pass
 
-The two are compared on **agreement** (do they select the same heads, and do they recover the published circuit?), **faithfulness** (are the selected heads necessary and sufficient?) and **efficiency** (wall-clock cost).
+The two are compared on **agreement** (do they select the same heads, and do they overlap with the published circuit?), **faithfulness** (are the selected heads necessary and sufficient?) and **efficiency** (wall-clock cost).
 
 ## Notebooks
 
